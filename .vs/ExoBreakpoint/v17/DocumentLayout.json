@@ -11,15 +11,15 @@
       "RelativeMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|solutionrelative:Source\\ExoBreakpoint\\WaveManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9E2AB8DB-F1C5-3657-AED2-3828ECE280A8}|Intermediate\\ProjectFiles\\UE5.vcxproj|C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\TextBlock.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\ScoreWidget.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|solutionrelative:Source\\ExoBreakpoint\\ScoreWidget.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\ScoreWidget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|solutionrelative:Source\\ExoBreakpoint\\ScoreWidget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.MakeFile.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,7 +33,19 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "TextBlock.h",
+              "DocumentMoniker": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\TextBlock.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\TextBlock.h",
+              "ToolTip": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\TextBlock.h [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\TextBlock.h [Read Only]",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-10T06:33:17.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ScoreWidget.cpp",
               "DocumentMoniker": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\ScoreWidget.cpp",
               "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\ScoreWidget.cpp",
@@ -45,7 +57,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ScoreWidget.h",
               "DocumentMoniker": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\ScoreWidget.h",
               "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\ScoreWidget.h",
@@ -53,20 +65,7 @@
               "RelativeToolTip": "Source\\ExoBreakpoint\\ScoreWidget.h",
               "ViewState": "AQIAAAAAAAAAZ2ZmZmb0vxUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T03:43:02.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Microsoft.MakeFile.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.MakeFile.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.MakeFile.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.MakeFile.targets",
-              "RelativeToolTip": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Microsoft\\VC\\v170\\Microsoft.MakeFile.targets",
-              "ViewState": "AQIAABMAAAAAAAAAAAAIwDMAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-03-21T01:53:27.575Z"
+              "WhenOpened": "2025-03-21T03:43:02.675Z"
             },
             {
               "$type": "Document",
@@ -76,7 +75,7 @@
               "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\WaveManager.cpp",
               "ToolTip": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\WaveManager.cpp",
               "RelativeToolTip": "Source\\ExoBreakpoint\\WaveManager.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T01:53:13.547Z",
               "EditorCaption": ""
@@ -89,7 +88,7 @@
               "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\WaveManager.h",
               "ToolTip": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\WaveManager.h",
               "RelativeToolTip": "Source\\ExoBreakpoint\\WaveManager.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAZAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAowCgAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-21T01:53:13.087Z",
               "EditorCaption": ""
