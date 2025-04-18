@@ -1,18 +1,13 @@
+// WaveManager.cpp
+
 #include "WaveManager.h"
 #include "Engine/World.h"
 #include "TimerManager.h"
+#include "DrawDebugHelpers.h"
 
 AWaveManager::AWaveManager()
 {
-    PrimaryActorTick.bCanEverTick = true;
-    CurrentWave = 1;
-    Score = 0;
-    SpawnInterval = 10.0f;
-    DisplayWaveProgress = 0.0f;
-    TotalEnemiesInWave = 0;
-    EnemiesRemaining = 0;
-    WaveStartTime = 0.0f;
-    WaveDuration = 0.0f;
+    PrimaryActorTick.bCanEverTick = false;
 }
 
 void AWaveManager::BeginPlay()
@@ -21,48 +16,76 @@ void AWaveManager::BeginPlay()
     StartNextWave();
 }
 
-void AWaveManager::Tick(float DeltaTime)
-{
-    Super::Tick(DeltaTime);
-}
-
 void AWaveManager::StartNextWave()
 {
-    TotalEnemiesInWave = CurrentWave * 5;
-    EnemiesRemaining = TotalEnemiesInWave;
-    WaveStartTime = GetWorld()->GetTimeSeconds();
-    WaveDuration = SpawnInterval * TotalEnemiesInWave;
-    DisplayWaveProgress = 0.0f;
+    // compute our fixed quota for this wave
+    ToSpawn = BaseEnemiesPerWave + (CurrentWave - 1) * EnemiesIncrementPerWave;
+    TotalToSpawn = ToSpawn;
+    AliveCount = 0;
+    KilledCount = 0;
 
-    GetWorldTimerManager().SetTimer(SpawnTimer, this, &AWaveManager::SpawnEnemy, SpawnInterval, true);
-    GetWorldTimerManager().SetTimer(WaveProgressTimer, this, &AWaveManager::UpdateWaveProgress, 1.0f, true);
+    // start spawning timer
+    GetWorldTimerManager().SetTimer(
+        SpawnTimerHandle,
+        this,
+        &AWaveManager::SpawnEnemyTick,
+        SpawnInterval,
+        true);
+
+    // initial UI update
+    TickWaveProgress();
 }
 
-void AWaveManager::SpawnEnemy()
+void AWaveManager::SpawnEnemyTick()
 {
-    if (EnemiesRemaining > 0 && EnemyClass)
+    // stop spawning if we've hit the cap, or we have too many on screen
+    if (ToSpawn <= 0 || AliveCount >= MaxConcurrentAlive)
     {
-        GetWorld()->SpawnActor<AActor>(EnemyClass, SpawnLocation, FRotator::ZeroRotator);
-        EnemiesRemaining--;
-
-        if (EnemiesRemaining == 0)
+        if (ToSpawn <= 0)
         {
-            GetWorldTimerManager().ClearTimer(SpawnTimer);
+            // once cap is reached, clear the spawn timer
+            GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
         }
+        return;
+    }
+
+    // choose a random portal (or fallback to the manager's location)
+    int32 idx = SpawnPortals.Num() > 0
+        ? FMath::RandRange(0, SpawnPortals.Num() - 1)
+        : INDEX_NONE;
+
+    FVector loc = SpawnPortals.IsValidIndex(idx)
+        ? SpawnPortals[idx]->GetActorLocation()
+        : GetActorLocation();
+    FRotator rot = SpawnPortals.IsValidIndex(idx)
+        ? SpawnPortals[idx]->GetActorRotation()
+        : FRotator::ZeroRotator;
+
+    // do the actual spawn
+    FActorSpawnParameters params;
+    params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+
+    if (AActor* spawned = GetWorld()->SpawnActor<AActor>(EnemyClass, loc, rot, params))
+    {
+        ToSpawn--;
+        AliveCount++;
+
+        // debug: draw a little sphere so you see where they popped
+        DrawDebugSphere(GetWorld(), loc, 75.f, 12, FColor::Red, false, 2.f);
+
+        TickWaveProgress();
     }
 }
 
-void AWaveManager::UpdateWaveProgress()
+void AWaveManager::NotifyEnemyKilled()
 {
-    float Elapsed = GetWorld()->GetTimeSeconds() - WaveStartTime;
-    DisplayWaveProgress = FMath::Clamp(Elapsed / WaveDuration, 0.0f, 1.0f);
+    // job #1: clamp AliveCount down
+    AliveCount = FMath::Max(0, AliveCount - 1);
+    // job #2: count the kill
+    KilledCount++;
 
-    if (DisplayWaveProgress >= 1.0f)
-    {
-        GetWorldTimerManager().ClearTimer(WaveProgressTimer);
-        CurrentWave++;
-        StartNextWave();
-    }
+    TickWaveProgress();
+    CheckWaveEnd();
 }
 
 void AWaveManager::AddScore(int32 Amount)
@@ -73,5 +96,22 @@ void AWaveManager::AddScore(int32 Amount)
 
 float AWaveManager::GetWaveProgress() const
 {
-    return (TotalEnemiesInWave > 0) ? 1.0f - ((float)EnemiesRemaining / (float)TotalEnemiesInWave) : 1.0f;
+    return (TotalToSpawn > 0)
+        ? float(KilledCount) / float(TotalToSpawn)
+        : 0.f;
+}
+
+void AWaveManager::TickWaveProgress()
+{
+    OnWaveProgressChanged.Broadcast(GetWaveProgress());
+}
+
+void AWaveManager::CheckWaveEnd()
+{
+    // only advance once we've spawned the full quota AND killed them all
+    if (ToSpawn == 0 && AliveCount == 0)
+    {
+        CurrentWave++;
+        StartNextWave();
+    }
 }
