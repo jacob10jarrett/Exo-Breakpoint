@@ -70,9 +70,6 @@ void AWaveManager::SpawnEnemyTick()
         ToSpawn--;
         AliveCount++;
 
-        // debug: draw a little sphere so you see where they popped
-        DrawDebugSphere(GetWorld(), loc, 75.f, 12, FColor::Red, false, 2.f);
-
         TickWaveProgress();
     }
 }

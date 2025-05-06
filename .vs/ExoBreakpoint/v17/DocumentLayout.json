@@ -48,8 +48,7 @@
               "RelativeToolTip": "..\\..\\..\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\CoreUObject\\Public\\UObject\\UObjectArray.h [Read Only]",
               "ViewState": "AQIAAFcEAAAAAAAAAAApwHIEAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-17T18:15:53.27Z",
-              "EditorCaption": " [Read Only]"
+              "WhenOpened": "2025-04-17T18:15:53.27Z"
             },
             {
               "$type": "Document",
@@ -61,8 +60,7 @@
               "RelativeToolTip": "Source\\ExoBreakpoint\\ExoBreakpoint.Build.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T15:44:43.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T15:44:43.249Z"
             },
             {
               "$type": "Document",
@@ -108,7 +106,7 @@
               "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\WaveManager.cpp",
               "ToolTip": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\WaveManager.cpp",
               "RelativeToolTip": "Source\\ExoBreakpoint\\WaveManager.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHUAAAAAAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAQwEYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T01:53:13.547Z",
               "EditorCaption": ""
@@ -121,7 +119,7 @@
               "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\WaveManager.h",
               "ToolTip": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\WaveManager.h",
               "RelativeToolTip": "Source\\ExoBreakpoint\\WaveManager.h",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAmwGAAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-21T01:53:13.087Z",
               "EditorCaption": ""
