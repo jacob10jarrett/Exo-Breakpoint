@@ -1,9 +1,11 @@
-// WaveManager.cpp
-
 #include "WaveManager.h"
 #include "Engine/World.h"
 #include "TimerManager.h"
 #include "DrawDebugHelpers.h"
+#include "Kismet/GameplayStatics.h"     
+#include "HighScoreSave.h"              
+
+const FString AWaveManager::SaveSlotName = TEXT("DefaultHS");            
 
 AWaveManager::AWaveManager()
 {
@@ -13,18 +15,20 @@ AWaveManager::AWaveManager()
 void AWaveManager::BeginPlay()
 {
     Super::BeginPlay();
+
+    LoadHighScore();               
     StartNextWave();
 }
 
+/* ---------- Wave lifecycle ---------- */
+
 void AWaveManager::StartNextWave()
 {
-    // compute our fixed quota for this wave
     ToSpawn = BaseEnemiesPerWave + (CurrentWave - 1) * EnemiesIncrementPerWave;
     TotalToSpawn = ToSpawn;
     AliveCount = 0;
     KilledCount = 0;
 
-    // start spawning timer
     GetWorldTimerManager().SetTimer(
         SpawnTimerHandle,
         this,
@@ -32,36 +36,32 @@ void AWaveManager::StartNextWave()
         SpawnInterval,
         true);
 
-    // initial UI update
     TickWaveProgress();
 }
 
 void AWaveManager::SpawnEnemyTick()
 {
-    // stop spawning if we've hit the cap, or we have too many on screen
     if (ToSpawn <= 0 || AliveCount >= MaxConcurrentAlive)
     {
         if (ToSpawn <= 0)
         {
-            // once cap is reached, clear the spawn timer
             GetWorldTimerManager().ClearTimer(SpawnTimerHandle);
         }
         return;
     }
 
-    // choose a random portal (or fallback to the manager's location)
     int32 idx = SpawnPortals.Num() > 0
         ? FMath::RandRange(0, SpawnPortals.Num() - 1)
         : INDEX_NONE;
 
-    FVector loc = SpawnPortals.IsValidIndex(idx)
+    FVector  loc = SpawnPortals.IsValidIndex(idx)
         ? SpawnPortals[idx]->GetActorLocation()
         : GetActorLocation();
+
     FRotator rot = SpawnPortals.IsValidIndex(idx)
         ? SpawnPortals[idx]->GetActorRotation()
         : FRotator::ZeroRotator;
 
-    // do the actual spawn
     FActorSpawnParameters params;
     params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 
@@ -69,16 +69,13 @@ void AWaveManager::SpawnEnemyTick()
     {
         ToSpawn--;
         AliveCount++;
-
         TickWaveProgress();
     }
 }
 
 void AWaveManager::NotifyEnemyKilled()
 {
-    // job #1: clamp AliveCount down
     AliveCount = FMath::Max(0, AliveCount - 1);
-    // job #2: count the kill
     KilledCount++;
 
     TickWaveProgress();
@@ -105,10 +102,46 @@ void AWaveManager::TickWaveProgress()
 
 void AWaveManager::CheckWaveEnd()
 {
-    // only advance once we've spawned the full quota AND killed them all
     if (ToSpawn == 0 && AliveCount == 0)
     {
         CurrentWave++;
         StartNextWave();
     }
+}
+
+/* ---------- High-score logic ---------- */
+
+void AWaveManager::LoadHighScore()                                          
+{
+    CachedHighScore = 0;
+
+    if (UGameplayStatics::DoesSaveGameExist(SaveSlotName, UserIndex))
+    {
+        if (UHighScoreSave* Save =
+            Cast<UHighScoreSave>(UGameplayStatics::LoadGameFromSlot(SaveSlotName, UserIndex)))
+        {
+            CachedHighScore = Save->HighScore;
+        }
+    }
+}
+
+bool AWaveManager::TryCommitHighScore(int32 CurrentScore)                   
+{
+    if (CachedHighScore == INDEX_NONE)   // first call safety
+    {
+        LoadHighScore();
+    }
+
+    if (CurrentScore > CachedHighScore)
+    {
+        CachedHighScore = CurrentScore;
+
+        UHighScoreSave* Save =
+            Cast<UHighScoreSave>(UGameplayStatics::CreateSaveGameObject(UHighScoreSave::StaticClass()));
+        Save->HighScore = CachedHighScore;
+
+        UGameplayStatics::SaveGameToSlot(Save, SaveSlotName, UserIndex);
+        return true;           
+    }
+    return false;               
 }

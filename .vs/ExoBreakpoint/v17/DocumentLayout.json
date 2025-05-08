@@ -3,12 +3,29 @@
   "WorkspaceRootPath": "C:\\Users\\jacob\\Exo-Breakpoint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\WaveManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|solutionrelative:Source\\ExoBreakpoint\\WaveManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9E2AB8DB-F1C5-3657-AED2-3828ECE280A8}|Intermediate\\ProjectFiles\\UE5.vcxproj|C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E2AB8DB-F1C5-3657-AED2-3828ECE280A8}|Intermediate\\ProjectFiles\\UE5.vcxproj|C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\TextBlock.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E2AB8DB-F1C5-3657-AED2-3828ECE280A8}|Intermediate\\ProjectFiles\\UE5.vcxproj|C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Private\\UserWidget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\WaveManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|solutionrelative:Source\\ExoBreakpoint\\WaveManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\WaveManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|solutionrelative:Source\\ExoBreakpoint\\WaveManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\Public\\HighScoreSave.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|solutionrelative:Source\\ExoBreakpoint\\Public\\HighScoreSave.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\Private\\HighScoreSave.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|solutionrelative:Source\\ExoBreakpoint\\Private\\HighScoreSave.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E2AB8DB-F1C5-3657-AED2-3828ECE280A8}|Intermediate\\ProjectFiles\\UE5.vcxproj|C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\CoreUObject\\Public\\UObject\\UObjectArray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -18,15 +35,12 @@
       "RelativeMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|solutionrelative:Source\\ExoBreakpoint\\ExoBreakpoint.Build.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E2AB8DB-F1C5-3657-AED2-3828ECE280A8}|Intermediate\\ProjectFiles\\UE5.vcxproj|C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\TextBlock.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\ScoreWidget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\ExoBreakpoint\\ScoreWidget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\ScoreWidget.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|solutionrelative:Source\\ExoBreakpoint\\ScoreWidget.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\ScoreWidget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4A1DE917-6B6D-3076-A425-6431D8FCE21C}|Intermediate\\ProjectFiles\\ExoBreakpoint.vcxproj|solutionrelative:Source\\ExoBreakpoint\\ScoreWidget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\ScoreWidget.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Source\\ExoBreakpoint\\ScoreWidget.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,11 +50,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Button.h",
+              "DocumentMoniker": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\Button.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\Button.h",
+              "ToolTip": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\Button.h [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\Button.h [Read Only]",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-08T00:47:19.399Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UserWidget.cpp",
+              "DocumentMoniker": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Private\\UserWidget.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Private\\UserWidget.cpp",
+              "ToolTip": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Private\\UserWidget.cpp [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Private\\UserWidget.cpp [Read Only]",
+              "ViewState": "AQIAAL0EAAAAAAAAAAAWwNYEAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-07T20:59:58.113Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HighScoreSave.cpp",
+              "DocumentMoniker": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\Private\\HighScoreSave.cpp",
+              "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\Private\\HighScoreSave.cpp",
+              "ToolTip": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\Private\\HighScoreSave.cpp",
+              "RelativeToolTip": "Source\\ExoBreakpoint\\Private\\HighScoreSave.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-07T18:58:14.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HighScoreSave.h",
+              "DocumentMoniker": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\Public\\HighScoreSave.h",
+              "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\Public\\HighScoreSave.h",
+              "ToolTip": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\Public\\HighScoreSave.h",
+              "RelativeToolTip": "Source\\ExoBreakpoint\\Public\\HighScoreSave.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-07T18:57:27.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "UObjectArray.h",
               "DocumentMoniker": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\CoreUObject\\Public\\UObject\\UObjectArray.h",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\CoreUObject\\Public\\UObject\\UObjectArray.h",
@@ -52,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "ExoBreakpoint.Build.cs",
               "DocumentMoniker": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\ExoBreakpoint.Build.cs",
               "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\ExoBreakpoint.Build.cs",
@@ -64,19 +130,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "TextBlock.h",
               "DocumentMoniker": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\TextBlock.h",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\TextBlock.h",
               "ToolTip": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\TextBlock.h [Read Only]",
               "RelativeToolTip": "..\\..\\..\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source\\Runtime\\UMG\\Public\\Components\\TextBlock.h [Read Only]",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-10T06:33:17.022Z"
+              "WhenOpened": "2025-04-10T06:33:17.022Z",
+              "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ScoreWidget.cpp",
               "DocumentMoniker": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\ScoreWidget.cpp",
               "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\ScoreWidget.cpp",
@@ -88,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "ScoreWidget.h",
               "DocumentMoniker": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\ScoreWidget.h",
               "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\ScoreWidget.h",
@@ -100,26 +167,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "WaveManager.cpp",
               "DocumentMoniker": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\WaveManager.cpp",
               "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\WaveManager.cpp",
               "ToolTip": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\WaveManager.cpp",
               "RelativeToolTip": "Source\\ExoBreakpoint\\WaveManager.cpp",
-              "ViewState": "AQIAADAAAAAAAAAAAAAQwEYAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T01:53:13.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "WaveManager.h",
               "DocumentMoniker": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\WaveManager.h",
               "RelativeDocumentMoniker": "Source\\ExoBreakpoint\\WaveManager.h",
               "ToolTip": "C:\\Users\\jacob\\Exo-Breakpoint\\Source\\ExoBreakpoint\\WaveManager.h",
               "RelativeToolTip": "Source\\ExoBreakpoint\\WaveManager.h",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwCoAAAAAAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAFwAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-21T01:53:13.087Z",
               "EditorCaption": ""
